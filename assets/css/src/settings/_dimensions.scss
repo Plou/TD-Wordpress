@@ -1,0 +1,46 @@
+////
+/// Dimensions
+///
+/// @group Settings
+///
+////
+
+/// Max size of the page
+$max-width: 1290px;
+$page-padding: 15px;
+$grid-gutter-width: 40px;
+$grid-columns: 12;
+
+/// Viewports sizes
+/// They're used in media queries
+$vw-thin: 320px;
+$vw-small: 640px;
+$vw-medium: 960px;
+$vw-large: 1040px;
+$vw-huge: $max-width;
+
+/// Bootstrap grid variables
+$screen-sm-min: $vw-small;
+$screen-md-min: $vw-medium;
+$screen-lg-min: $vw-large;
+
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1);
+
+$container-sm: $vw-small;
+$container-md: $vw-medium;
+$container-lg: $vw-large;
+$container-xlg: $vw-huge;
+
+
+/// Media query conditions
+/// Usage
+/// @media screen and #{$media-small} {  }
+$media-small: '(min-width: #{$vw-small})';
+$media-medium: '(min-width: #{$vw-medium})';
+$media-large: '(min-width: #{$vw-large})';
+$media-huge: '(min-width: #{$vw-huge})';
+
+$media-thin: '(max-width: #{$vw-medium})';
+$media-squeezed: '(max-height: #{$vw-small})';

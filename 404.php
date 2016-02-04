@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<main id="main" role="main">
+<main class="container" role="main">
 
   <header>
     <h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'twentyfifteen' ); ?></h1>

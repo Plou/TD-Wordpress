@@ -6,7 +6,7 @@
 
 get_header(); ?>
 
-<main role="main">
+<main class="container" role="main">
 
   <?php if ( have_posts() ) : ?>
 
