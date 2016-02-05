@@ -1,0 +1,10 @@
+.nav-footer {
+  position: relative; margin-top: 60px; background-color: rgba($black, .97); z-index: 100;
+
+  a {
+    color: rgba($white, .5);
+
+    &:hover { color: $white; }
+  }
+
+}

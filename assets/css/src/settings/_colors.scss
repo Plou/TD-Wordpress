@@ -7,18 +7,19 @@
 
 /// Base colors
 $white: #fff;
-$grey: #777;
+$grey: #cdcdcd;
 $black: #222;
 
 $red: #d9534f;
 $green: #5cb85c;
+$orange: #ea881d;
 
 $blue: #68bbdb;
 
 $brand-color: $blue;
 
 /// Functionnal colors
-$text-color: $black;
+$text-color: rgba($black, .9);
 $link-color: $brand-color;
 $error-color: $red;
 $valid-color: $green;

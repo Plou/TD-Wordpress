@@ -1,0 +1,23 @@
+.nav {
+  @extend %horizontal-list;
+
+  text-align: center;
+
+  box-shadow: 0 0 1px rgba($black, .4);
+
+  .menu-item {
+    margin: 0; font-size: 1.4em; text-align: left;
+
+    > a {
+      display: block; padding: 10px 20px;
+    }
+    .menu-item { font-size: 100%; }
+
+  }
+
+  a {
+    color: rgba($black, .5);
+
+    &:hover { color: $orange; }
+  }
+}

@@ -7,6 +7,7 @@
 
 
   <footer id="colophon" class="" role="contentinfo">
+    <?php get_template_part('partials/nav-footer'); ?>
   </footer>
 
 </div>

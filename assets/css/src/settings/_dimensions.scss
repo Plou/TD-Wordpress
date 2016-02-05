@@ -6,7 +6,7 @@
 ////
 
 /// Max size of the page
-$max-width: 1290px;
+$max-width: 720px;
 $page-padding: 15px;
 $grid-gutter-width: 40px;
 $grid-columns: 12;
@@ -16,7 +16,7 @@ $grid-columns: 12;
 $vw-thin: 320px;
 $vw-small: 640px;
 $vw-medium: 960px;
-$vw-large: 1040px;
+$vw-large: $max-width;
 $vw-huge: $max-width;
 
 /// Bootstrap grid variables

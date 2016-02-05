@@ -13,6 +13,7 @@
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
   <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/style.css" charset="utf-8">
+  <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/main.css" charset="utf-8">
   <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 
   <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/main.js"></script>
@@ -20,3 +21,6 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<?php get_template_part('partials/nav-main'); ?>
+<?php get_template_part('partials/banner'); ?>
