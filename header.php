@@ -14,9 +14,12 @@
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
   <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/style.css" charset="utf-8">
   <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/css/main.css" charset="utf-8">
+
   <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 
-  <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/main.js"></script>
+  <link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/favicon.ico">
+
+  <!-- <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/main.js"></script> -->
   <?php wp_head(); ?>
 </head>
 

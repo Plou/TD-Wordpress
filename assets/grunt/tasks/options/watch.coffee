@@ -10,8 +10,6 @@ if options.lint.lock
       'clean:css'
     ]
     es2015: [
-      'jshint'
-      'jscs'
       'browserify:dev'
     ]
 else
@@ -20,12 +18,9 @@ else
       'sass:dev'
       'postcss:dev'
       'clean:css'
-      'scsslint'
     ]
     es2015: [
       'browserify:dev'
-      'jshint'
-      'jscs'
     ]
 
 

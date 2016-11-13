@@ -1,0 +1,7 @@
+.pagination {
+  text-align: center;
+
+  .page-numbers { display: inline-block; margin: 0 10px;font-size: 2em; }
+
+  .prev, .next { display: none; }
+}

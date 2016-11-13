@@ -9,6 +9,8 @@
     box-shadow: 0 4px 8px rgba($grey, .8);
   }
 
+  &:first-child { margin-top: 0; }
+
   .post-list-thumbnail {
     max-height: 200px; overflow: hidden;
 

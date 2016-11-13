@@ -10,10 +10,10 @@
  */
 ?>
 <?php if ( !is_single() ) {
-  _e(sprintf( '<a href="%s" class="link-block">', esc_url(get_permalink())));
+  _e(sprintf( '<a href="%s" rel="bookmark" class="link-block">', esc_url(get_permalink())));
 } ?>
 
-  <article id="post post-<?php the_ID(); ?>" <?php post_class(is_single() ? 'post-single' : 'post-list'); ?> >
+  <article id="post post-<?php the_ID(); ?>" <?php post_class(is_single() ? 'post-single' : 'post-list'); ?>>
     <div class="post-list-thumbnail">
       <?php the_post_thumbnail('post-list'); ?>
     </div>
@@ -33,7 +33,6 @@
         else {
           get_template_part('partials/meta');
           the_title('<h2 class="post-title">', '</h2>');
-          the_excerpt(20, '');
         }
 
       ?>

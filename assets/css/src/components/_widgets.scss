@@ -1,0 +1,21 @@
+.tagcloud {
+  a { color: $orange;
+    &:hover { color: darken($orange, 20); }
+  }
+}
+
+.list-cat {
+  margin: 0; padding: 0; list-style: none;
+  ul {
+    margin: 0; padding: 0; list-style: none;
+  }
+  .cat-item { margin: 0; padding: 0; font-size: 1.4rem; line-height: 1;
+    a {
+      display: block; margin-top: -1px; border: 1px solid $grey; padding: 10px;
+      color: $black;
+
+      &:hover { background-color: $blue; color: $white; }
+    }
+  }
+
+}
