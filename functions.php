@@ -96,38 +96,4 @@
   }
   add_filter( 'excerpt_more', 'new_excerpt_more' );
 
-
-  function register_post_types() {
-    // Déclare un nouveau type de contenu
-    register_post_type( 'event',
-      array(
-        'capability_type' => 'post',
-        'label'  => 'Événements',
-        'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
-        'rewrite' => array( 'slug' => 'agenda' ),
-        'public' => true,
-        'has_archive' => true,
-        'with_front' => true,
-        'menu_icon' => 'dashicons-calendar-alt'
-      )
-    );
-  }
-
-  function register_taxonomies() {
-    // Déclare une nouvelle taxonomie
-    register_taxonomy(
-      'event-category',
-      'event',
-      array(
-          'label' => 'Catégorie',
-          'public' => true,
-          'rewrite' => true,
-          'hierarchical' => true,
-          'show_ui' => true
-      )
-    );
-  }
-  add_action( 'init', 'register_post_types' );
-  add_action( 'init', 'register_taxonomies' );
-
 ?>

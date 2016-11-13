@@ -24,6 +24,3 @@
 </head>
 
 <body <?php body_class(); ?>>
-
-<?php get_template_part('partials/nav-main'); ?>
-<?php get_template_part('partials/banner'); ?>
