@@ -1,14 +1,3 @@
-<?php
-/**
- * The default template for displaying content
- *
- * Used for both single and index/archive/search.
- *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
- */
-?>
 <?php if ( !is_single() ) {
   _e(sprintf( '<a href="%s" class="link-block">', esc_url(get_permalink())));
 } ?>

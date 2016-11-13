@@ -74,14 +74,20 @@
   // Liste les catégories
   function get_post_categories($post_id, $exclude = array(), $separator  = ', ', $limit = 10) {
     $tax = (get_post_type($post_id) != 'post' ? get_post_type($post_id).'-category' : 'category');
-    $categories = array_slice(get_the_terms($post_id, $tax), 0, $limit);
-    $names = array();
-    foreach($categories as $category) {
-      if(!in_array($category->cat_ID, $exclude)){
-        array_push($names, $category->name);
+    $terms = get_the_terms($post_id, $tax);
+    if (is_array($terms) && count($terms) > 0) {
+      $categories = array_slice($terms, 0, $limit);
+      $names = array();
+      if (count($categories) > 0) {
+        foreach($categories as $category) {
+          if(!in_array($category->cat_ID, $exclude)){
+            array_push($names, $category->name);
+          }
+        }
+        return implode($separator, $names);
       }
     }
-    return implode($separator, $names);
+    return false;
   }
 
   // Enlève '[...]' à la fin des résumés d'articles.
