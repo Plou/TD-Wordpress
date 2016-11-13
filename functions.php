@@ -48,7 +48,7 @@
 
   // Retourne le titre approprié
   function get_title() {
-    // Get the category
+    // Récupère la catégorie / étiquette
     if(is_tag()) {
         $term_id = get_query_var('tag_id');
         $taxonomy = 'post_tag';
@@ -92,7 +92,7 @@
 
 
   function register_post_types() {
-    //this is where you can register custom post types
+    // Déclare un nouveau type de contenu
     register_post_type( 'event',
       array(
         'capability_type' => 'post',
@@ -108,7 +108,7 @@
   }
 
   function register_taxonomies() {
-    //this is where you can register custom taxonomies
+    // Déclare une nouvelle taxonomie
     register_taxonomy(
       'event-category',
       'event',

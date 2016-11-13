@@ -6,7 +6,6 @@
 $( () => {
 
   $(window).ready( () => {
-
-
+    console.log('Hi there!');
   })
 })
